@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            height: 400px;
+            background-color: yellow;
+            display: flex;
+            justify-content: center;
+        }
+
+        .box {
+            width: 200px;
+            height: 200px;
+            border: 3px solid black;
+            font-size: 3em;
+        }
+
+
+
+
+
+
+
+
+
+        .container-fx {
+            height: 400px;
+            background-color: salmon;
+            display: flex;
+            justify-content: flex-end;
+        }
+
+        .box-fx {
+            width: 200px;
+            height: 200px;
+            border: 3px solid black;
+            font-size: 3em;
+        }
+
+
+
+
+
+
+
+
+
+
+
+        .container-gz {
+            height: 400px;
+            background-color: grey;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .box-gz {
+            width: 200px;
+            height: 200px;
+            border: 3px solid black;
+            font-size: 3em;
+        }
+
+
+
+
+
+
+
+
+
+
+        .container-ab {
+            height: 400px;
+            background-color: chartreuse;
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        .box-ab {
+            width: 200px;
+            height: 200px;
+            border: 3px solid black;
+            font-size: 3em;
+        }
+
+
+
+
+
+
+
+
+
+
+        .container-dc {
+            height: 400px;
+            background-color: aquamarine;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .box-dc {
+            width: 200px;
+            height: 200px;
+            border: 3px solid rgb(0, 0, 0);
+            font-size: 3em;
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+        .vartical-box {
+            height: 500px;
+            background-color: orange;
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+        }
+
+
+
+
+
+
+
+
+
+
+        .vartical-box-2 {
+            height: 500px;
+            background-color: rgb(252, 30, 30);
+            display: flex;
+            justify-content: space-evenly;
+            align-items: flex-start;
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+        .vartical-box-3 {
+            height: 500px;
+            background-color: rgb(252, 30, 30);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        .stretch {
+            height: 500px;
+            background-color: orange;
+            display: flex;
+            justify-content: center;
+            align-items: stretch;
+        }
+
+        .stretch-box {
+            width: 200px;
+            border: 3px solid black;
+            font-size: 3em;
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        .box-fl-grow {
+            height: 900px;
+            background-color: orangered;
+            display: flex;
+            align-items: stretch;
+        }
+
+        .box-grow {
+            width: 200px;
+            border: 3px solid black;
+            font-size: 3em;
+        }
+
+        #this-one-grow {
+            flex-grow: 1;
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        .box-second-grow {
+            height: 900px;
+            background-color: lightblue;
+            display: flex;
+            align-items: stretch;
+        }
+
+        #this-one-grow-2 {
+            order: 2;
+        }
+
+        #this-one-grow-3 {
+            order: 1;
+            flex-grow: 1;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>CSS Flexbox details about </h1>
+
+
+
+    <h2>justify-content: center;</h2>
+
+    <div class="container">
+        <div class="box">Flexbox-1</div>
+        <div class="box">Flexbox-2</div>
+        <div class="box">Flexbox-3</div>
+    </div>
+
+    <br><br><br>
+
+
+
+    <h2>justify-content: flex-end;</h2>
+
+    <div class="container-fx">
+        <div class="box-fx">Flexbox-1</div>
+        <div class="box-fx">Flexbox-2</div>
+        <div class="box-fx">Flexbox-3</div>
+    </div>
+
+    <br><br><br>
+
+
+
+    <h2>justify-content: space-between;</h2>
+
+    <div class="container-gz">
+        <div class="box-gz">Flexbox-1</div>
+        <div class="box-gz">Flexbox-2</div>
+        <div class="box-gz">Flexbox-3</div>
+        <div class="box-gz">Flexbox-4</div>
+    </div>
+
+    <br><br><br>
+
+
+
+    <h2>justify-content: space-evenly;</h2>
+
+    <div class="container-ab">
+        <div class="box-ab">Flexbox-1</div>
+        <div class="box-ab">Flexbox-2</div>
+        <div class="box-ab">Flexbox-3</div>
+    </div>
+
+    <br><br><br>
+
+
+
+    <h2>justify-content: space-around;</h2>
+
+    <div class="container-dc">
+        <div class="box-dc">Flexbox-1</div>
+        <div class="box-dc">Flexbox-2</div>
+        <div class="box-dc">Flexbox-3</div>
+    </div>
+
+    <br><br><br>
+
+
+
+    <h2>align-items: flex-end;</h2>
+
+    <div class="vartical-box">
+        <div class="box">Horizontal Box</div>
+        <div class="box">Horizontal Box</div>
+        <div class="box">Horizontal Box</div>
+    </div>
+
+    <br><br><br>
+
+
+
+    <h2>align-items: flex-start;</h2>
+
+    <div class="vartical-box-2">
+        <div class="box">Horizontal Box</div>
+        <div class="box">Horizontal Box</div>
+        <div class="box">Horizontal Box</div>
+    </div>
+
+    <br><br><br>
+
+
+
+    <h2>align-items: center;</h2>
+
+    <div class="vartical-box-3">
+        <div class="box">Horizontal Box</div>
+        <div class="box">Horizontal Box</div>
+        <div class="box">Horizontal Box</div>
+    </div>
+
+    <br><br><br>
+
+
+
+    <h2>align-items: stretch;</h2>
+
+    <div class="stretch">
+        <div class="stretch-box">Stretch Box</div>
+        <div class="stretch-box">Stretch Box</div>
+        <div class="stretch-box">Stretch Box</div>
+    </div>
+
+    <br><br><br><br>
+
+
+
+    <h2>This is a flex-grow style</h2>
+
+    <div class="box-fl-grow">
+        <div class="box-grow">Grow Box</div>
+        <div id="this-one-grow" class="box-grow">Grow Box</div>
+    </div>
+
+    <br><br><br><br>
+
+
+
+    <h2>Another style Flex Grow this one</h2>
+
+    <div class="box-second-grow">
+        <div id="this-one-grow-2" class="box-grow">Grow Box</div>
+        <div id="this-one-grow-3" class="box-grow">Grow Box</div>
+    </div>
+
+    <br><br><br>
+
+</body>
+
+</html>
